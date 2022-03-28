@@ -1,0 +1,14 @@
+mode: set
+cardealership/stores/engine/store.go:17.20,19.2 1 1
+cardealership/stores/engine/store.go:29.97,31.16 2 1
+cardealership/stores/engine/store.go:35.2,35.20 1 1
+cardealership/stores/engine/store.go:31.16,33.3 1 1
+cardealership/stores/engine/store.go:39.85,44.16 4 1
+cardealership/stores/engine/store.go:48.2,48.21 1 1
+cardealership/stores/engine/store.go:44.16,46.3 1 1
+cardealership/stores/engine/store.go:52.97,54.16 2 1
+cardealership/stores/engine/store.go:58.2,58.20 1 1
+cardealership/stores/engine/store.go:54.16,56.3 1 1
+cardealership/stores/engine/store.go:62.70,64.16 2 1
+cardealership/stores/engine/store.go:68.2,68.12 1 1
+cardealership/stores/engine/store.go:64.16,66.3 1 1

@@ -1,0 +1,26 @@
+mode: set
+cardealership/stores/car/store.go:19.17,21.2 1 1
+cardealership/stores/car/store.go:24.82,30.16 4 1
+cardealership/stores/car/store.go:33.2,33.17 1 1
+cardealership/stores/car/store.go:30.16,32.3 1 1
+cardealership/stores/car/store.go:37.75,43.16 4 1
+cardealership/stores/car/store.go:47.2,47.17 1 1
+cardealership/stores/car/store.go:43.16,45.3 1 1
+cardealership/stores/car/store.go:51.81,55.16 2 1
+cardealership/stores/car/store.go:59.2,59.17 1 1
+cardealership/stores/car/store.go:55.16,57.3 1 1
+cardealership/stores/car/store.go:63.63,66.16 2 1
+cardealership/stores/car/store.go:70.2,70.12 1 1
+cardealership/stores/car/store.go:66.16,68.3 1 1
+cardealership/stores/car/store.go:74.99,76.16 2 1
+cardealership/stores/car/store.go:80.2,80.23 1 1
+cardealership/stores/car/store.go:84.2,84.29 1 1
+cardealership/stores/car/store.go:91.2,93.18 2 1
+cardealership/stores/car/store.go:104.2,104.17 1 1
+cardealership/stores/car/store.go:76.16,78.3 1 1
+cardealership/stores/car/store.go:80.23,82.3 1 0
+cardealership/stores/car/store.go:84.29,86.17 2 1
+cardealership/stores/car/store.go:86.18,88.4 0 0
+cardealership/stores/car/store.go:93.18,97.17 3 1
+cardealership/stores/car/store.go:101.3,101.26 1 1
+cardealership/stores/car/store.go:97.17,99.4 1 1

@@ -1,0 +1,378 @@
+openapi: 3.0.0
+info:
+  title:  CarDealership
+  description: Dealership of cars
+  version: 1.0.0
+
+paths:
+  /cars/{id}:
+    description : Car and Engine Details
+    get:
+      description: Operation to Fetch Car and Engine Details
+      parameters: 
+        - in: header
+          name: api-key
+          required: true
+          schema:
+            type: string
+            example : "123456"
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+      responses: 
+        '200':
+          description: Success Responses
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    ID:
+                     type: string
+                     example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Name: 
+                      type: string
+                      example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Year: 
+                      type: integer
+                      example: 2000
+                    Brand:
+                      type: string
+                      example: Ferrari
+                    Fuel:
+                      type: string
+                      example: Electric
+                    Engine:
+                        properties:
+                          Range:
+                            type: integer
+                            example : 10
+              
+        '400':
+          description: Missing parameters
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Status Bad Request
+        '500':
+          description: Error from server
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Internal server error
+    
+    
+    put:
+      description: Update Car and Engine Details
+      parameters: 
+        - in: header
+          name: api-key
+          required: true
+          schema:
+            type: string
+            example : "123456"
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+      requestBody:
+        description: Body to create a car and engine
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                Name: 
+                  type: string
+                  example: Ferrari F40
+                Year: 
+                  type: integer
+                  example: 2000
+                Brand:
+                  type: string
+                  example: Ferrari
+                Fuel:
+                  type: string
+                  example: Electric
+                Engine:
+                  properties:
+                    Displacement: 
+                      type:  integer
+                      example: 0
+                    NoOfCylinders:
+                      type: integer
+                      example: 0
+                    Range:
+                      type: integer
+                      example : 10
+      responses:
+        '200':
+          description: Success Responses
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    ID:
+                     type: string
+                     example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Name: 
+                      type: string
+                      example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Year: 
+                      type: integer
+                      example: 2000
+                    Brand:
+                      type: string
+                      example: Ferrari
+                    Fuel:
+                      type: string
+                      example: Electric
+                    Engine:
+                      properties:
+                        Engine_id:
+                          type: string
+                          example: ab5333e8-8423-49d1-b8ef-d04122d2fc67
+                        Displacement: 
+                          type:  integer
+                          example: 0
+                        NoOfCylinders:
+                          type: integer
+                          example: 0
+                        Range:
+                          type: integer
+                          example : 10
+        '400':
+          description: Missing parameters
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Status Bad Request
+                
+        '500':
+          description: Error from server
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Internal server error
+    delete:
+      description: Delete Car and Engine Details
+      parameters: 
+        - in: header
+          name: api-key
+          required: true
+          schema:
+            type: string
+            example : "123456"
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+      responses:
+        '204':
+          description: Deletion successful
+          content:
+            application/json:
+              schema:
+                type: string
+                example: Deleted successfully
+        
+        '400':
+          description: Missing parameters
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Status Bad Request
+                
+        '500':
+          description: Error from server
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Internal server error
+  
+          
+      
+    
+    
+                
+    
+  /cars:
+    description: car and engine details
+    post:
+      description: Create Car and Engine Details
+      parameters: 
+        - in: header
+          name: api-key
+          required: true
+          schema:
+            type: string
+            example : "123456"
+      requestBody:
+        description: Body to create a car and engine
+        required: true
+        content:
+          application/json:
+            schema:
+              properties:
+                Name: 
+                  type: string
+                  example: Ferrari F40
+                Year: 
+                  type: integer
+                  example: 2000
+                Brand:
+                  type: string
+                  example: Ferrari
+                Fuel:
+                  type: string
+                  example: Electric
+                Engine:
+                  properties:
+                    Range:
+                      type: integer
+                      example : 10
+      responses:
+        '200':
+          description: Success Responses
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    ID:
+                     type: string
+                     example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Name: 
+                      type: string
+                      example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Year: 
+                      type: integer
+                      example: 2000
+                    Brand:
+                      type: string
+                      example: Ferrari
+                    Fuel:
+                      type: string
+                      example: Electric
+                    Engine:
+                      properties:
+                        Engine_id:
+                          type: string
+                          example: ab5333e8-8423-49d1-b8ef-d04122d2fc67
+                        Displacement: 
+                          type:  integer
+                          example: 0
+                        NoOfCylinders:
+                          type: integer
+                          example: 0
+                        Range:
+                          type: integer
+                          example : 10
+        '400':
+          description: Missing parameters
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Status Bad Request
+                
+        '500':
+          description: Error from server
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Internal server error
+                
+    get:
+      
+      description: Operation to Fetch Car and Engine Details by brand 
+      parameters: 
+        - in: header
+          name: api-key
+          required: true
+          schema:
+            type: string
+            example : "123456"
+        - in: query
+          name: brand
+          required: true
+          schema:
+            type: string
+            example: Ferrari
+        - in: query
+          name: isEngine
+          schema:
+            type: string
+            example: Ferrari
+      responses: 
+        '200':
+          description: Success Responses
+          content: 
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    ID:
+                     type: string
+                     example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Name: 
+                      type: string
+                      example: ab5333e8-8423-49d1-b8ef-d04122d2fc05
+                    Year: 
+                      type: integer
+                      example: 2000
+                    Brand:
+                      type: string
+                      example: Ferrari
+                    Fuel:
+                      type: string
+                      example: Electric
+                    Engine:
+                      properties:
+                        Engine_id:
+                          type: string
+                          example: ab5333e8-8423-49d1-b8ef-d04122d2fc67
+                        Displacement: 
+                          type:  integer
+                          example: 0
+                        NoOfCylinders:
+                          type: integer
+                          example: 0
+                        Range:
+                          type: integer
+                          example : 10
+        '400':
+          description: Missing parameters
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Status Bad Request
+        
+        '500':
+          description: Error from server
+          content: 
+            application/json:
+              schema:
+                type: string
+                example: Internal server error
+                

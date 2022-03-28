@@ -1,0 +1,19 @@
+mode: set
+geometry/Geometry.go:19.40,21.37 2 1
+geometry/Geometry.go:24.2,24.10 1 1
+geometry/Geometry.go:21.37,23.3 1 1
+geometry/Geometry.go:27.35,29.37 2 1
+geometry/Geometry.go:32.2,32.10 1 1
+geometry/Geometry.go:29.37,31.3 1 1
+geometry/Geometry.go:35.37,37.17 2 1
+geometry/Geometry.go:40.2,40.10 1 1
+geometry/Geometry.go:37.17,39.3 1 1
+geometry/Geometry.go:43.32,45.17 2 1
+geometry/Geometry.go:48.2,48.10 1 1
+geometry/Geometry.go:45.17,47.3 1 1
+geometry/Geometry.go:51.32,53.19 2 1
+geometry/Geometry.go:56.2,56.10 1 1
+geometry/Geometry.go:53.19,55.3 1 1
+geometry/Geometry.go:59.37,61.19 2 1
+geometry/Geometry.go:64.2,64.10 1 1
+geometry/Geometry.go:61.19,63.3 1 1
